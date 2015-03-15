@@ -1,0 +1,27 @@
+{
+    "name": "amxmodx/utils",
+    "description": "php classes for various amxmodx work",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fedcomp"
+        }
+    ],
+    "require": {
+        "mdurrant/php-binary-reader": "1.0.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Amxx\\": "src/Amxx/"
+        }
+    },
+    "require-dev": {
+        "fzaninotto/faker": "dev-master#b1167d9c6"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Faker\\": "src/Faker/"
+        }
+    }
+}
