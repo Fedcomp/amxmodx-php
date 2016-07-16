@@ -4,10 +4,11 @@
     "minimum-stability": "stable",
     "license": "MIT",
     "authors": [
-        {
-            "name": "Fedcomp"
-        }
+      { "name": "Fedcomp" }
     ],
+    "scripts": {
+      "test": "phpunit"
+    },
     "require": {
         "mdurrant/php-binary-reader": "1.0.6"
     },
@@ -17,7 +18,9 @@
         }
     },
     "require-dev": {
-        "fzaninotto/faker": "dev-master#b1167d9c6"
+      "fzaninotto/faker": "v1.5.0",
+      "phpunit/phpunit": "4.*",
+      "phpunit/php-invoker": "*"
     },
     "autoload-dev": {
         "psr-4": {

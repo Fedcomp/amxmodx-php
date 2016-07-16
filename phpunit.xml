@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phpunit backupGlobals="true"
+         backupStaticAttributes="true"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         stopOnFailure="false"
+         syntaxCheck="true"
+         bootstrap="vendor/autoload.php"
+        >
+
+    <testsuites>
+        <testsuite name="php-hlds Test Suite">
+            <directory>tests/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
