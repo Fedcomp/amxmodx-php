@@ -1,8 +1,10 @@
 <?php
+declare(strict_types=1);
 
 use Amxx\Nvault;
+use PHPUnit\Framework\TestCase;
 
-class NvaultTest extends PHPUnit_Framework_TestCase
+class NvaultTest extends TestCase
 {
     protected function setUp()
     {

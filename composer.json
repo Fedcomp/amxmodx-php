@@ -4,27 +4,26 @@
     "minimum-stability": "stable",
     "license": "MIT",
     "authors": [
-      { "name": "Fedcomp" }
+        { "name": "Fedcomp" }
     ],
     "scripts": {
-      "test": "phpunit"
-    },
-    "require": {
-        "mdurrant/php-binary-reader": "1.0.6"
+        "test": "phpunit"
     },
     "autoload": {
         "psr-4": {
             "Amxx\\": "src/Amxx/"
         }
     },
-    "require-dev": {
-      "fzaninotto/faker": "v1.5.0",
-      "phpunit/phpunit": "4.*",
-      "phpunit/php-invoker": "*"
-    },
     "autoload-dev": {
         "psr-4": {
             "Faker\\": "src/Faker/"
         }
+    },
+    "require": {
+        "mdurrant/php-binary-reader": "^1.0"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "^1.7",
+        "phpunit/phpunit": "^7.2"
     }
 }
