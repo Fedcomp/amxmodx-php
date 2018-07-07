@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Amxx\Nvault;
+use Amxmodx\Nvault;
 
 class NvaultTest extends TestCase
 {

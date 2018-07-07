@@ -1,6 +1,6 @@
 {
     "name": "amxmodx/utils",
-    "description": "php classes for various amxmodx work",
+    "description": "php classes for amxmodx special files",
     "minimum-stability": "stable",
     "license": "MIT",
     "authors": [
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Amxx\\": "src/Amxx/"
+            "": "src/"
         }
     },
     "require-dev": {

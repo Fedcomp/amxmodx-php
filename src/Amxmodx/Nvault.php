@@ -1,15 +1,15 @@
 <?php
 
-namespace Amxx;
+namespace Amxmodx;
 use PhpBinaryReader\BinaryReader;
 
 class InvalidNvault extends \Exception {}
 
-class nvault extends BinaryReader{
+class Nvault extends BinaryReader {
     public $keydata = NULL;
     public $extkeydata = NULL;
 
-    function __construct(){}
+    function __construct () {}
 
     public function initFromString($str){
         parent::__construct($str);
