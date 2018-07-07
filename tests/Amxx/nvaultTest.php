@@ -1,8 +1,9 @@
 <?php
 
+use PHPUnit\Framework\TestCase;
 use Amxx\Nvault;
 
-class NvaultTest extends PHPUnit_Framework_TestCase
+class NvaultTest extends TestCase
 {
     protected function setUp()
     {
@@ -13,7 +14,7 @@ class NvaultTest extends PHPUnit_Framework_TestCase
     public function testEqualGeneration()
     {
         $nvault_file = file_get_contents($this->nvault_path);
-        $result = $this->nvault->initFromFile($this->nvault_path)->parse();
+        $result = $this->nvault->initFromFile($this->nvault_path)->parse()->pack();
         $this->assertEquals($nvault_file, $result);
     }
 }

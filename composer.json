@@ -10,7 +10,7 @@
       "test": "phpunit"
     },
     "require": {
-        "mdurrant/php-binary-reader": "1.0.6"
+        "mdurrant/php-binary-reader": "^1.0.6"
     },
     "autoload": {
         "psr-4": {
@@ -19,8 +19,7 @@
     },
     "require-dev": {
       "fzaninotto/faker": "v1.5.0",
-      "phpunit/phpunit": "4.*",
-      "phpunit/php-invoker": "*"
+      "phpunit/phpunit": "*"
     },
     "autoload-dev": {
         "psr-4": {
