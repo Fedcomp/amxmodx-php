@@ -9,20 +9,16 @@ class Nvault extends BinaryReader {
     public $keydata = NULL;
     public $extkeydata = NULL;
 
-    function __construct () {}
-
-    public function initFromString($str){
-        parent::__construct($str);
-        return $this;
+    function __construct ($bin) {
+        $this->bin = BinaryReader($bin);
     }
 
     public function initFromFile($file_path){
         if(!file_exists($file_path))
             throw new \Exception("file '$file_path' is not found");
 
-        $file = file_get_contents($file_path);
-        parent::__construct($file);
-        return $this;
+        $bin = file_get_contents($file_path);
+        return new self($bin);
     }
 
     public function parse(){
